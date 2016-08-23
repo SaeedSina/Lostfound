@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">کجا گذاشتم</string>
+
+    <string name="title_activity_start">خوش آمدید</string>
+    <string name="login">ورود</string>
+    <string name="register">ثبت نام</string>
+    <string name="welcome">خوش آمدید</string>
+    <string name="username">نام کاربری</string>
+    <string name="password">رمز عبور</string>
+    <string name="regrequest">حساب کاربری ندارید؟ اینجا را کلیک کنید</string>
+    <string name="name">نام</string>
+    <string name="email">آدرس ایمیل</string>
+    <string name="logrequest">حساب کاربری دارید؟ اینجا را کلیک کنید</string>
+    <string name="loading_title">در حال دریافت اطلاعات</string>
+    <string name="enter_username">نام کاربری را وارد کنید</string>
+    <string name="enter_password">لطفا پسورد را وارد کنید</string>
+    <string name="userpasswrong">نام کاربری یا رمز عبور اشتباه می باشد</string>
+    <string name="networkerror">اینترنت خود را چک کنید</string>
+    <string name="succlogin">با موفقیت وارد شدید</string>
+    <string name="enter_name">نام را وارد کنید</string>
+    <string name="enter_email">ایمیل را وارد کنید</string>
+    <string name="fname">نام خانوادگی</string>
+    <string name="enter_fname">نام خانوادگی را وارد کنید</string>
+    <string name="succregister">حساب شما با موفقیت ایجاد شد</string>
+    <string name="userconflict">این نام کاربری از قبل وجود دارد</string>
+</resources>
