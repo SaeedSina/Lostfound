@@ -6,11 +6,15 @@ import com.backtory.androidsdk.Storage;
 import com.backtory.androidsdk.internal.Backtory;
 import com.backtory.androidsdk.internal.Config;
 
+import org.androidannotations.annotations.EApplication;
+
 /**
  * Created by saeed on 22-Aug-16.
  */
+@EApplication
 public class MyApplication extends Application {
-    @Override
+
+    
     public void onCreate() {
         super.onCreate();
         // Initializing backtory

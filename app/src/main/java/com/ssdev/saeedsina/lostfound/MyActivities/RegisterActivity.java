@@ -91,6 +91,7 @@ public class RegisterActivity extends AppCompatActivity {
                     myHelper.toast(getApplicationContext().getString(R.string.succregister));
                     MainActivity_.intent(RegisterActivity.this).start();
                     loadingDialog.hide();
+                    finish();
                 } else if (response.code() == HttpStatusCode.Conflict.code()) {
                     // Username is invalid
                     Log.d(TAG, "Bad username: a user with this username already exist");

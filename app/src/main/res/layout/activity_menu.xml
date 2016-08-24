@@ -13,6 +13,7 @@
     tools:context="com.ssdev.saeedsina.lostfound.MyActivities.MenuActivity">
 
     <com.ogaclejapan.arclayout.ArcLayout
+        android:id="@+id/arc"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:arc_origin="center"
@@ -23,6 +24,7 @@
         app:arc_reverseAngle="false"
         >
         <com.ssdev.saeedsina.lostfound.MyViews.MyButton
+            android:tag="no"
             android:id="@+id/btn_ilost"
             android:layout_width="80dp"
             android:layout_height="80dp"
@@ -33,15 +35,26 @@
             app:arc_origin="center"
             />
         <com.ssdev.saeedsina.lostfound.MyViews.MyButton
-            android:id="@+id/btn_ifound"
+            android:id="@+id/btn_logout"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:gravity="center"
-            android:text="@string/ifound"
+            android:text="@string/logout"
             android:textColor="#FFFFFF"
             android:background="@drawable/light_blue_oval_selector"
             app:arc_origin="center"
             />
+        <com.ssdev.saeedsina.lostfound.MyViews.MyButton
+            android:id="@+id/btn_support"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="@string/support"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/light_blue_oval_selector"
+            app:arc_origin="center"
+            />
+
         <com.ssdev.saeedsina.lostfound.MyViews.MyButton
             android:id="@+id/btn_adlist"
             android:layout_width="80dp"
@@ -63,11 +76,21 @@
             app:arc_origin="center"
             />
         <com.ssdev.saeedsina.lostfound.MyViews.MyButton
-            android:id="@+id/btn_support"
+            android:id="@+id/btn_enter"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:gravity="center"
-            android:text="@string/support"
+            android:text="@string/enter"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/light_blue_oval_selector"
+            app:arc_origin="center"
+            />
+        <com.ssdev.saeedsina.lostfound.MyViews.MyButton
+            android:id="@+id/btn_ifound"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="@string/ifound"
             android:textColor="#FFFFFF"
             android:background="@drawable/light_blue_oval_selector"
             app:arc_origin="center"

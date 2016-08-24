@@ -28,4 +28,6 @@
     <string name="adlist">آگهی ها</string>
     <string name="myaccount">حساب من</string>
     <string name="support">حمایت از ما</string>
+    <string name="logout">خروج کاربر</string>
+    <string name="enter">ورود</string>
 </resources>

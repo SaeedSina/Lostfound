@@ -49,15 +49,6 @@ public class MainActivity extends AppCompatActivity {
     @Bean
     LoadingDialog loadingDialog;
 
-
-    @AfterViews
-    void afterViews() {
-        if (BacktoryUser.getCurrentUser() != null) {
-            MenuActivity_.intent(MainActivity.this).start();
-            finish();
-        }
-    }
-
     @Click(R.id.txt_regrequest)
     void txtregrequest_Clicked(){
         RegisterActivity_.intent(MainActivity.this).start();
