@@ -23,4 +23,9 @@
     <string name="enter_fname">نام خانوادگی را وارد کنید</string>
     <string name="succregister">حساب شما با موفقیت ایجاد شد</string>
     <string name="userconflict">این نام کاربری از قبل وجود دارد</string>
+    <string name="ilost">گم کردم</string>
+    <string name="ifound">پیدا کردم</string>
+    <string name="adlist">آگهی ها</string>
+    <string name="myaccount">حساب من</string>
+    <string name="support">حمایت از ما</string>
 </resources>

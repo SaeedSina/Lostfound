@@ -34,6 +34,6 @@ public class LoadingDialog {
 
     @UiThread
     public void hide() {
-        dialog.hide();
+        dialog.dismiss();
     }
 }

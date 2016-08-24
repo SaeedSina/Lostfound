@@ -53,7 +53,8 @@ public class MainActivity extends AppCompatActivity {
     @AfterViews
     void afterViews() {
         if (BacktoryUser.getCurrentUser() != null) {
-            //load next page,user is logged in
+            MenuActivity_.intent(MainActivity.this).start();
+            finish();
         }
     }
 
@@ -96,7 +97,8 @@ public class MainActivity extends AppCompatActivity {
                             Log.d(TAG, "Wellcome " + txt_username.getText().toString());
                             myHelper.toast(getApplicationContext().getString(R.string.succlogin));
                             loadingDialog.hide();
-                            //TODO Link to the next page
+                            MenuActivity_.intent(MainActivity.this).start();
+                            finish();
                         } else if (response.code() == HttpStatusCode.Unauthorized.code()) {
                             Log.d(TAG, "Either username or password is wrong");
                             myHelper.toast(getApplicationContext().getString(R.string.userpasswrong));

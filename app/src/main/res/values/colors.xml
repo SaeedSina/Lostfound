@@ -10,4 +10,5 @@
     <color name="lightGray">#F2F2F2</color>
     <color name="titleGray">#999999</color>
     <color name="darkGray">#808080</color>
+    <color name="pressed">#33000000</color>
 </resources>
