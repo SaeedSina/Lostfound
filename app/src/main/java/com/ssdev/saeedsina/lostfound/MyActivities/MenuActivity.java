@@ -1,22 +1,19 @@
 package com.ssdev.saeedsina.lostfound.MyActivities;
 
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
-import android.widget.EditText;
 
+import com.backtory.androidsdk.internal.Backtory;
+import com.backtory.androidsdk.internal.BacktoryFile;
+import com.backtory.androidsdk.internal.BacktoryFileStorage;
 import com.backtory.androidsdk.model.BacktoryUser;
 import com.ogaclejapan.arclayout.ArcLayout;
 import com.ssdev.saeedsina.lostfound.MyClasses.MyHelper;
 import com.ssdev.saeedsina.lostfound.MyViews.LoadingDialog;
-import com.ssdev.saeedsina.lostfound.MyViews.MyButton;
 import com.ssdev.saeedsina.lostfound.R;
 
-import org.androidannotations.annotations.AfterInject;
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Background;
 import org.androidannotations.annotations.Bean;
@@ -56,6 +53,17 @@ public class MenuActivity extends AppCompatActivity {
     @ViewById(R.id.btn_logout)
     Button btnLogout;
 
+    @AfterViews
+    void afterView(){
+        if(BacktoryUser.getCurrentUser() != null){
+            ((ViewGroup)btnEnter.getParent()).removeView(btnEnter);
+        }
+        else{
+            ((ViewGroup)btnLogout.getParent()).removeView(btnLogout);
+            ((ViewGroup)btnMyAccount.getParent()).removeView(btnMyAccount);
+        }
+    }
+
     @Click(R.id.btn_logout)
     void btnLogout_Clicked(){
         loadingDialog.show();
@@ -68,21 +76,35 @@ public class MenuActivity extends AppCompatActivity {
         loadingDialog.hide();
         MainActivity_.intent(MenuActivity.this).start();
         finish();
-
     }
 
     @Click(R.id.btn_enter)
     void btnEnter_Clicked(){
         MainActivity_.intent(MenuActivity.this).start();
+        finish();
     }
-    @AfterViews
-    void afterView(){
-        if(BacktoryUser.getCurrentUser() != null){
-            ((ViewGroup)btnEnter.getParent()).removeView(btnEnter);
+
+
+    @Click(R.id.btn_adlist)
+    void btnAdList_Clicked(){
+        if(BacktoryUser.getCurrentUser() == null){
+            myHelper.toast(getApplicationContext().getString(R.string.pleaselogin));
+            MainActivity_.intent(MenuActivity.this).start();
+            finish();
         }
         else{
-            ((ViewGroup)btnLogout.getParent()).removeView(btnLogout);
-            ((ViewGroup)btnMyAccount.getParent()).removeView(btnMyAccount);
+            //// TODO: Go to Ad list Page
+        }
+    }
+    @Click(R.id.btn_ilost)
+    void btnILost_Clicked(){
+        if(BacktoryUser.getCurrentUser() == null){
+            myHelper.toast(getApplicationContext().getString(R.string.pleaselogin));
+            MainActivity_.intent(MenuActivity.this).start();
+            finish();
+        }
+        else{
+            SubmitLostActivity_.intent(MenuActivity.this).start();
         }
     }
 

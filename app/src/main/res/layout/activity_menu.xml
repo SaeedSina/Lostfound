@@ -10,9 +10,135 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/yellow"
-    tools:context="com.ssdev.saeedsina.lostfound.MyActivities.MenuActivity">
+    tools:context="com.ssdev.saeedsina.lostfound.MyActivities.MenuActivity"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        >
+        <com.ssdev.saeedsina.lostfound.MyViews.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/ourstatistic"
+            android:textSize="20sp"
+            android:textColor="@color/blue"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:layout_gravity="center">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_weight="0.5"
+               android:gravity="center">
 
-    <com.ogaclejapan.arclayout.ArcLayout
+               <com.ssdev.saeedsina.lostfound.MyViews.MyTextView
+                   android:id="@+id/usercount"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:textSize="15sp"
+                   android:textColor="@color/blue"
+                   android:text="22" />
+
+               <com.ssdev.saeedsina.lostfound.MyViews.MyTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="@string/usercount_lable"
+                   android:textSize="15sp"
+                   android:textColor="@color/blue" />
+           </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0.5"
+                android:gravity="center">
+
+                <com.ssdev.saeedsina.lostfound.MyViews.MyTextView
+                    android:id="@+id/lostadcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textColor="@color/blue"
+                    android:text="15" />
+
+                <com.ssdev.saeedsina.lostfound.MyViews.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/lostadcount_lable"
+                    android:textSize="15sp"
+                    android:textColor="@color/blue" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="right"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0.5"
+                android:gravity="center">
+
+                <com.ssdev.saeedsina.lostfound.MyViews.MyTextView
+                    android:id="@+id/foundcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textColor="@color/blue"
+                    android:text="22" />
+
+                <com.ssdev.saeedsina.lostfound.MyViews.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/foundcount_lable"
+                    android:textSize="15sp"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0.5"
+                android:gravity="center">
+
+                <com.ssdev.saeedsina.lostfound.MyViews.MyTextView
+                    android:id="@+id/matchcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textColor="@color/blue"
+                    android:text="15" />
+
+                <com.ssdev.saeedsina.lostfound.MyViews.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/matchcount_lable"
+                    android:textSize="15sp"
+                    android:textColor="@color/blue" />
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+        <com.ogaclejapan.arclayout.ArcLayout
         android:id="@+id/arc"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -21,6 +147,7 @@
         app:arc_radius="168dp"
         app:arc_axisRadius="120dp"
         app:arc_freeAngle="false"
+        android:layout_marginTop="100dp"
         app:arc_reverseAngle="false"
         >
         <com.ssdev.saeedsina.lostfound.MyViews.MyButton
@@ -98,4 +225,5 @@
 
     </com.ogaclejapan.arclayout.ArcLayout>
 
+    </LinearLayout>
 </LinearLayout>

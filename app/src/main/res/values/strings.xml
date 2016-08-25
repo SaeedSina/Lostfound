@@ -30,4 +30,15 @@
     <string name="support">حمایت از ما</string>
     <string name="logout">خروج کاربر</string>
     <string name="enter">ورود</string>
+    <string name="ourstatistic">آمار ما</string>
+    <string name="usercount_lable">تعداد کاربران:</string>
+    <string name="lostadcount_lable">تعداد گم کردم:</string>
+    <string name="foundcount_lable">تعداد پیداکردم:</string>
+    <string name="matchcount_lable">تعداد مچ شده:</string>
+    <string name="pleaselogin">لطفا ابتدا وارد شوید</string>
+    <string name="lostsubmit_title">لطفا مشخصات شی گم شده خود را وارد کنید.ایشالا پیدا میشه</string>
+    <string name="whatlost">چی گم کردی؟</string>
+    <string name="whatlostdesc">بیشتر توضیح بده</string>
+    <string name="browse">عکسی ازش داری؟</string>
+    <string name="lostsubmit">آگهی رو ثبت کن</string>
 </resources>

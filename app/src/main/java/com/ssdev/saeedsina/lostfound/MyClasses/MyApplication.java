@@ -14,7 +14,9 @@ import org.androidannotations.annotations.EApplication;
 @EApplication
 public class MyApplication extends Application {
 
-    
+
+    private String accessToken;
+    private String refreshToken;
     public void onCreate() {
         super.onCreate();
         // Initializing backtory
