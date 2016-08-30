@@ -12,17 +12,20 @@ import com.backtory.androidsdk.model.BacktoryResponse;
 import com.backtory.androidsdk.model.BacktoryUser;
 import com.backtory.androidsdk.model.LoginResponse;
 import com.rey.material.widget.TextView;
+import com.ssdev.saeedsina.lostfound.MyClasses.BacktoryConfig;
 import com.ssdev.saeedsina.lostfound.MyClasses.MyHelper;
 import com.ssdev.saeedsina.lostfound.MyViews.LoadingDialog;
 import com.ssdev.saeedsina.lostfound.R;
 
-import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Background;
 import org.androidannotations.annotations.Bean;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 import org.androidannotations.annotations.WindowFeature;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.client.HttpClientErrorException;
 
 @EActivity(R.layout.activity_main)
 @WindowFeature(Window.FEATURE_NO_TITLE)
@@ -37,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
     EditText txt_password;
 
 
+
     @ViewById(R.id.txt_regrequest)
     TextView txt_regrequest;
 
@@ -45,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Bean
     MyHelper myHelper;
+
 
     @Bean
     LoadingDialog loadingDialog;

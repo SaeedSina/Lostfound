@@ -18,6 +18,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    packagingOptions {
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
 }
 apt {
     arguments {
@@ -39,6 +45,7 @@ repositories {
     mavenCentral()
     mavenLocal()
 }
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
@@ -50,4 +57,11 @@ dependencies {
     compile "org.androidannotations:androidannotations-api:4.1.0"
     compile 'com.wrapp.floatlabelededittext:library:0.0.6'
     compile 'com.ogaclejapan.arclayout:library:1.1.0@aar'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'org.springframework.android:spring-android-rest-template:1.0.1.RELEASE'
+    compile 'org.springframework.android:spring-android-core:1.0.1.RELEASE'
+    compile 'org.androidannotations:rest-spring-api:4.0.0'
+    apt "org.androidannotations:rest-spring:4.0.0"
+    compile 'com.mohamadamin:persianmaterialdatetimepicker:1.2.1'
+    compile 'com.google.android.gms:play-services-maps:9.4.0'
 }

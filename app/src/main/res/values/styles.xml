@@ -42,4 +42,7 @@
         <item name="lpd_outAnimDuration">@android:integer/config_mediumAnimTime</item>
         <item name="lpd_verticalAlign">bottom</item>
     </style>
+    <style name="Theme.Default.Dialog" parent="@android:style/Theme.Dialog"></style>
+
+
 </resources>

@@ -38,7 +38,16 @@
     <string name="pleaselogin">لطفا ابتدا وارد شوید</string>
     <string name="lostsubmit_title">لطفا مشخصات شی گم شده خود را وارد کنید.ایشالا پیدا میشه</string>
     <string name="whatlost">چی گم کردی؟</string>
-    <string name="whatlostdesc">بیشتر توضیح بده</string>
+    <string name="lostdesc">بیشتر توضیح بده</string>
     <string name="browse">عکسی ازش داری؟</string>
     <string name="lostsubmit">آگهی رو ثبت کن</string>
+    <string name="lostcontact">یه شماره تماس بده</string>
+    <string name="datepicker">ثبت تاریخ</string>
+    <string name="lostdate">کی گم کردی</string>
+    <string name="lostlocation">کجا گم کردی</string>
+    <string name="locationpicker">ثبت مکان</string>
+    <string name="lostreward">چقدر مژدگانی در نظر داری</string>
+    <string name="select">انتخاب</string>
+    <string name="cancel">بیخیال</string>
+    <string name="selectlocation">مکان را انتخاب کنید</string>
 </resources>

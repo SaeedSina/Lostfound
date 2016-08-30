@@ -21,8 +21,11 @@
                 android:gravity="center"
                 android:text="@string/lostsubmit_title"
                 android:textColor="@color/blue"
-                android:textSize="15sp"/>
-
+                android:textSize="25sp"/>
+            <View
+                android:layout_width="wrap_content"
+                android:background="@drawable/gradientline"
+                android:layout_height="1dp"></View>
             <com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -42,7 +45,7 @@
             <com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp">
+                android:layout_marginTop="10dp">
                 <com.ssdev.saeedsina.lostfound.MyViews.MyEditText
                     android:imeOptions="actionNext"
                     android:id="@+id/etext_lostsubmit_desc"
@@ -50,23 +53,151 @@
                     android:singleLine="true"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/whatlostdesc"
+                    android:hint="@string/lostdesc"
                     android:textColorHint="@color/blue"
                     android:textColor="@color/blue"/>
             </com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp>
 
-            <com.ssdev.saeedsina.lostfound.MyViews.MyButton
-                android:id="@+id/btn_lostbrowse"
-                android:layout_marginTop="10dp"
+            <com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/blue"
-                android:text="@string/browse"
-                android:textColor="@color/white"/>
-            <ImageView
-                android:id="@+id/img"
+                android:layout_marginTop="10dp">
+                <com.ssdev.saeedsina.lostfound.MyViews.MyEditText
+                    android:imeOptions="actionNext"
+                    android:id="@+id/etext_lostsubmit_contact"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/lostcontact"
+                    android:textColorHint="@color/blue"
+                    android:textColor="@color/blue"/>
+            </com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp>
+            <com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+                <com.ssdev.saeedsina.lostfound.MyViews.MyEditText
+                    android:imeOptions="actionNext"
+                    android:id="@+id/etext_lostsubmit_reward"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/lostreward"
+                    android:textColorHint="@color/blue"
+                    android:textColor="@color/blue"/>
+            </com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:contentDescription="thumbnail"
+                    android:layout_weight="0.5" />
+
+                <com.ssdev.saeedsina.lostfound.MyViews.MyButton
+
+                    android:id="@+id/btn_lostbrowse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blue"
+                    android:text="@string/browse"
+                    android:textColor="@color/white"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+
+            <View
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:background="@drawable/gradientline"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+                    <com.ssdev.saeedsina.lostfound.MyViews.MyEditText
+                        android:imeOptions="actionNext"
+                        android:enabled="false"
+                        android:id="@+id/etext_lostsubmit_date"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/lostdate"
+                        android:textColorHint="@color/blue"
+                        android:textColor="@color/blue"/>
+                </com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp>
+
+                <com.ssdev.saeedsina.lostfound.MyViews.MyButton
+                    android:id="@+id/btn_datepicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/datepicker"
+                    android:textColor="@color/white"
+                    android:background="@color/blue"
+                    android:layout_weight="0.5" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:background="@drawable/gradientline"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5">
+                    <com.ssdev.saeedsina.lostfound.MyViews.MyEditText
+                        android:imeOptions="actionNext"
+                        android:enabled="false"
+                        android:id="@+id/etext_lostsubmit_location"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/lostlocation"
+                        android:textColorHint="@color/blue"
+                        android:textColor="@color/blue"/>
+                </com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp>
+
+                <com.ssdev.saeedsina.lostfound.MyViews.MyButton
+                    android:id="@+id/btn_locationpicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/locationpicker"
+                    android:textColor="@color/white"
+                    android:background="@color/blue"
+                    android:layout_weight="0.5" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:background="@drawable/gradientline"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"></View>
             <com.ssdev.saeedsina.lostfound.MyViews.MyButton
                 android:id="@+id/btn_lostsubmit"
                 android:layout_marginTop="10dp"

@@ -5,9 +5,6 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
 
-import com.backtory.androidsdk.internal.Backtory;
-import com.backtory.androidsdk.internal.BacktoryFile;
-import com.backtory.androidsdk.internal.BacktoryFileStorage;
 import com.backtory.androidsdk.model.BacktoryUser;
 import com.ogaclejapan.arclayout.ArcLayout;
 import com.ssdev.saeedsina.lostfound.MyClasses.MyHelper;
