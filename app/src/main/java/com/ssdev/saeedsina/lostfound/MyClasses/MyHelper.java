@@ -9,18 +9,12 @@ import android.widget.Toast;
 
 import com.google.gson.Gson;
 
-import org.androidannotations.annotations.EBean;
-import org.androidannotations.annotations.RootContext;
-import org.androidannotations.annotations.UiThread;
 
 
-@EBean
 public class MyHelper {
 
-    @RootContext
     Context context;
 
-    @UiThread
     public void toast(String toast) {
         Toast.makeText(context, toast, Toast.LENGTH_LONG).show();
     }

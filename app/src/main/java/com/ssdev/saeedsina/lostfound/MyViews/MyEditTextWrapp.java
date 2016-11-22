@@ -1,6 +1,5 @@
 package com.ssdev.saeedsina.lostfound.MyViews;
 
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.os.Build;
@@ -19,7 +18,7 @@ public class MyEditTextWrapp extends FloatLabeledEditText {
         setFont();
     }
 
-    @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
+
     private void setFont() {
         TextView tvHint = (TextView) getChildAt(0);
 

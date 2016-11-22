@@ -50,4 +50,7 @@
     <string name="select">انتخاب</string>
     <string name="cancel">بیخیال</string>
     <string name="selectlocation">مکان را انتخاب کنید</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -1,115 +1,76 @@
 package com.ssdev.saeedsina.lostfound.MyActivities;
 
+import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-import android.view.Window;
-import android.widget.Button;
-import android.widget.EditText;
 
-import com.backtory.androidsdk.HttpStatusCode;
-import com.backtory.androidsdk.internal.BacktoryCallBack;
-import com.backtory.androidsdk.model.BacktoryResponse;
-import com.backtory.androidsdk.model.BacktoryUser;
-import com.backtory.androidsdk.model.LoginResponse;
-import com.rey.material.widget.TextView;
-import com.ssdev.saeedsina.lostfound.MyClasses.BacktoryConfig;
-import com.ssdev.saeedsina.lostfound.MyClasses.MyHelper;
-import com.ssdev.saeedsina.lostfound.MyViews.LoadingDialog;
+import com.ssdev.saeedsina.lostfound.MyFragments.LoginFragment;
+import com.ssdev.saeedsina.lostfound.MyFragments.RegisterFragment;
+import com.ssdev.saeedsina.lostfound.MyInterfaces.OnMenuItemSelectedListener;
 import com.ssdev.saeedsina.lostfound.R;
 
-import org.androidannotations.annotations.Background;
-import org.androidannotations.annotations.Bean;
-import org.androidannotations.annotations.Click;
-import org.androidannotations.annotations.EActivity;
-import org.androidannotations.annotations.ViewById;
-import org.androidannotations.annotations.WindowFeature;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.client.HttpClientErrorException;
 
-@EActivity(R.layout.activity_main)
-@WindowFeature(Window.FEATURE_NO_TITLE)
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements OnMenuItemSelectedListener {
+    protected static final int REQUEST_CHECK_SETTINGS = 0x1;
 
-    private static final String TAG = "MainActivity";
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-    @ViewById(R.id.etext_login_username)
-    EditText txt_username;
+        if (findViewById(R.id.fragment_container) != null) {
 
-    @ViewById(R.id.etext_login_password)
-    EditText txt_password;
-
-
-
-    @ViewById(R.id.txt_regrequest)
-    TextView txt_regrequest;
-
-    @ViewById(R.id.btn_login)
-    Button btn_login;
-
-    @Bean
-    MyHelper myHelper;
-
-
-    @Bean
-    LoadingDialog loadingDialog;
-
-    @Click(R.id.txt_regrequest)
-    void txtregrequest_Clicked(){
-        RegisterActivity_.intent(MainActivity.this).start();
-    }
-
-    @Click(R.id.btn_login)
-    void btnLogin_Clicked(){
-        validete();
-    }
-
-    private void validete() {
-        if(!txt_username.getText().toString().isEmpty()){
-            if(!txt_password.getText().toString().isEmpty()){
-                login();
-            }else{
-                myHelper.toast(getApplicationContext().getString(R.string.enter_password));
+            // However, if we're being restored from a previous state,
+            // then we don't need to do anything and should return or else
+            // we could end up with overlapping fragments.
+            if (savedInstanceState != null) {
+                return;
             }
-        }else{
-            myHelper.toast(getApplicationContext().getString(R.string.enter_username));
+
+            // Create a new Fragment to be placed in the activity layout
+            LoginFragment firstFragment = new LoginFragment();
+
+            // In case this activity was started with special instructions from an
+            // Intent, pass the Intent's extras to the fragment as arguments
+            firstFragment.setArguments(getIntent().getExtras());
+
+            // Add the fragment to the 'fragment_container' FrameLayout
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.fragment_container, firstFragment).commit();
         }
+
     }
 
-    @Background
-    void login() {
-        String username = txt_username.getText().toString();
-        String password = txt_password.getText().toString();
-        loadingDialog.show();
-        BacktoryUser.loginInBackground(txt_username.getText().toString(), txt_password.getText().toString(),
-                new BacktoryCallBack<LoginResponse>() {
+    @Override
+    public void onMenuItemSelected(String frag) {
+        switch (frag){
+            case "register":
+                RegisterFragment registerFragment = new RegisterFragment();
 
-                    // Login operation done (fail or success), handling it:
-                    @Override
-                    public void onResponse(BacktoryResponse<LoginResponse> response) {
-                        // Checking result of operation
-                        if (response.isSuccessful()) {
-                            // Login successfull
-                            Log.d(TAG, "Wellcome " + txt_username.getText().toString());
-                            myHelper.toast(getApplicationContext().getString(R.string.succlogin));
-                            loadingDialog.hide();
-                            MenuActivity_.intent(MainActivity.this).start();
-                            finish();
-                        } else if (response.code() == HttpStatusCode.Unauthorized.code()) {
-                            Log.d(TAG, "Either username or password is wrong");
-                            myHelper.toast(getApplicationContext().getString(R.string.userpasswrong));
-                            loadingDialog.hide();
-                        } else {
-                            // Operation generally failed, maybe internet connection issue
-                            Log.d(TAG, "Login failed for other reasons like network issues");
-                            myHelper.toast(getApplicationContext().getString(R.string.networkerror));
-                            loadingDialog.hide();
-                        }
-                    }
+                // In case this activity was started with special instructions from an
+                // Intent, pass the Intent's extras to the fragment as arguments
+                registerFragment.setArguments(getIntent().getExtras());
 
-                });
-        loadingDialog.hide();
+                // Add the fragment to the 'fragment_container' FrameLayout
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_container, registerFragment).commit();
+                break;
 
+            case "login":
+                LoginFragment loginFragment = new LoginFragment();
+
+                // In case this activity was started with special instructions from an
+                // Intent, pass the Intent's extras to the fragment as arguments
+                loginFragment.setArguments(getIntent().getExtras());
+
+                // Add the fragment to the 'fragment_container' FrameLayout
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_container, loginFragment).commit();
+                break;
+            case "settings":
+
+            case "pair":
+
+        }
     }
 
 }

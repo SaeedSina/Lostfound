@@ -7,7 +7,6 @@
     android:paddingLeft="24dp"
     android:paddingRight="24dp"
     android:paddingTop="56dp"
-    tools:context="com.ssdev.saeedsina.lostfound.MyActivities.RegisterActivity"
     android:orientation="vertical"
     android:background="@color/yellow">
     <com.ssdev.saeedsina.lostfound.MyViews.MyTextView
@@ -28,14 +27,13 @@
         <com.ssdev.saeedsina.lostfound.MyViews.MyEditText
             android:imeOptions="actionNext"
             android:id="@+id/etext_registration_name"
-            android:gravity="right"
-            android:singleLine="true"
+            android:gravity="end"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/name"
             android:textColorHint="@color/blue"
             android:textColor="@color/blue"
-            />
+            android:maxLines="1" />
     </com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp>
 
     <com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp
@@ -45,14 +43,13 @@
         <com.ssdev.saeedsina.lostfound.MyViews.MyEditText
             android:imeOptions="actionNext"
             android:id="@+id/etext_registration_fname"
-            android:gravity="right"
-            android:singleLine="true"
+            android:gravity="end"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/fname"
             android:textColorHint="@color/blue"
             android:textColor="@color/blue"
-            />
+            android:maxLines="1" />
     </com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp>
 
     <com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp
@@ -62,14 +59,13 @@
         <com.ssdev.saeedsina.lostfound.MyViews.MyEditText
             android:imeOptions="actionNext"
             android:id="@+id/etext_registration_username"
-            android:gravity="right"
-            android:singleLine="true"
+            android:gravity="end"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/username"
             android:textColorHint="@color/blue"
             android:textColor="@color/blue"
-            />
+            android:maxLines="1" />
     </com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp>
 
     <com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp
@@ -78,14 +74,13 @@
         android:layout_marginBottom="2dp">
         <com.ssdev.saeedsina.lostfound.MyViews.MyEditText
             android:id="@+id/etext_registration_email"
-            android:gravity="right"
-            android:singleLine="true"
+            android:gravity="end"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email"
             android:textColorHint="@color/blue"
             android:textColor="@color/blue"
-            />
+            android:maxLines="1" />
     </com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp>
 
     <com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp
@@ -94,15 +89,14 @@
         android:layout_marginBottom="2dp">
         <com.ssdev.saeedsina.lostfound.MyViews.MyEditText
             android:id="@+id/etext_registration_password"
-            android:gravity="right"
-            android:singleLine="true"
+            android:gravity="end"
             android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"
             android:textColorHint="@color/blue"
             android:textColor="@color/blue"
-            />
+            android:maxLines="1" />
     </com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp>
 
     <com.ssdev.saeedsina.lostfound.MyViews.MyButton
