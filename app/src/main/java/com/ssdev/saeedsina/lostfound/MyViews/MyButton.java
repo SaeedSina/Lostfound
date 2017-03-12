@@ -17,8 +17,8 @@ public class MyButton extends Button {
     }
 
     private void setFont() {
-        Typeface normal = Typeface.createFromAsset(getContext().getAssets(),"fonts/iransans.ttf");
-        setTypeface( normal, Typeface.NORMAL );
+        Typeface normal = Typeface.createFromAsset(getContext().getAssets(), "fonts/bree.otf");
+        setTypeface(normal, Typeface.NORMAL);
     }
 
     public MyButton(Context context, AttributeSet attrs) {

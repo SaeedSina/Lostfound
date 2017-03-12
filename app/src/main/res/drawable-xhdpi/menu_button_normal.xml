@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:drawable="@drawable/menu_button_shadow" />
+
+<item android:bottom="@dimen/layer_padding">
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="oval"
+        >
+        <solid android:color="#009688"/>
+        <corners android:bottomRightRadius="7dp"
+            android:bottomLeftRadius="7dp"
+            android:topLeftRadius="7dp"
+            android:topRightRadius="7dp"/>
+    </shape>
+</item>
+</layer-list>

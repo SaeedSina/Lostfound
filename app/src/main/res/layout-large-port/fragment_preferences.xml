@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ssdev.saeedsina.lostfound.MyFragments.PreferencesFragment"
+    android:orientation="vertical"
+    android:gravity="fill_vertical">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rd_pref_desc" />
+
+        <com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/rd_pref_desc">
+            <com.ssdev.saeedsina.lostfound.MyViews.MyEditText
+                android:id="@+id/txt_pref_desc"
+                android:layout_width="match_parent"
+                android:gravity="start"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:hint="@string/prefdesc"
+                android:enabled="false"
+                android:textSize="24sp" />
+
+        </com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rd_pref_tags" />
+
+        <com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <com.ssdev.saeedsina.lostfound.MyViews.MyEditText
+                android:id="@+id/txt_pref_tags"
+                android:layout_width="match_parent"
+                android:gravity="start"
+                android:layout_height="wrap_content"
+                android:hint="@string/preftags"
+                android:singleLine="true"
+                android:enabled="false"
+                android:textSize="24sp" />
+        </com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rd_pref_location" />
+
+        <com.ssdev.saeedsina.lostfound.MyViews.MyButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/selectlocation"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            style="@style/MyButton"
+            android:id="@+id/btn_pref_selectlocation"
+            android:enabled="false"
+            android:textSize="24sp" />
+    </LinearLayout>
+    <com.ssdev.saeedsina.lostfound.MyViews.MyButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@android:string/search_go"
+        style="@style/MyButton"
+        android:layout_margin="10dp"
+        android:id="@+id/btn_pref_submit"
+        android:textSize="30sp" />
+
+</LinearLayout>

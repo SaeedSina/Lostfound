@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.ssdev.saeedsina.lostfound.MyFragments.SubmitFoundFragment"
+        android:paddingBottom="5dp">
+
+        <com.ssdev.saeedsina.lostfound.MyViews.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/MyTextView"
+            android:text="@string/foundsubmit_title"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:id="@+id/myTextView"
+            android:layout_marginTop="8dp"
+            />
+        <View
+            android:layout_width="wrap_content"
+            android:background="@drawable/gradientline"
+            android:id="@+id/view"
+            android:layout_height="2dp"></View>
+
+        <com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/twname"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp">
+            <com.ssdev.saeedsina.lostfound.MyViews.MyEditText
+                android:imeOptions="actionNext"
+                android:id="@+id/txt_found_name"
+                android:gravity="start"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/whatfound"
+                 />
+        </com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp>
+
+        <com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/twdesc"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp">
+            <com.ssdev.saeedsina.lostfound.MyViews.MyEditText
+                android:imeOptions="actionNext"
+                android:id="@+id/txt_found_desc"
+                android:gravity="start"
+                android:singleLine="true"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/founddesc"
+                android:maxLines="3"
+                android:textAlignment="viewStart" />
+        </com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp>
+
+        <com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/twdate"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp">
+            <com.ssdev.saeedsina.lostfound.MyViews.MyEditText
+                android:imeOptions="actionNext"
+                android:id="@+id/txt_found_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/founddate"
+                android:singleLine="true"
+                android:focusable="false"
+                android:textAlignment="viewStart"
+                android:gravity="center_vertical|start" />
+        </com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp>
+
+        <com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/twcontact"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp">
+            <com.ssdev.saeedsina.lostfound.MyViews.MyEditText
+                android:id="@+id/txt_found_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lostcontacttxt"
+                android:singleLine="true"
+                android:textAlignment="viewStart"
+                android:gravity="center_vertical|start"
+                android:inputType="text" />
+        </com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp>
+
+        <com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/twtags"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp">
+            <com.ssdev.saeedsina.lostfound.MyViews.MyEditText
+                android:imeOptions="actionNext"
+                android:id="@+id/txt_found_tags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tags"
+                android:singleLine="true"
+                android:maxLines="1" />
+        </com.ssdev.saeedsina.lostfound.MyViews.MyEditTextWrapp>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <com.ssdev.saeedsina.lostfound.MyViews.MyButton
+                android:id="@+id/btn_found_imgpicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/browse"
+                style="@style/MyButton"
+                android:layout_weight="0.5"
+                />
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/thumbnail"
+                android:layout_weight="0.5"
+                />
+        </LinearLayout>
+
+        <com.ssdev.saeedsina.lostfound.MyViews.MyButton
+            android:id="@+id/btn_found_locationpicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/location"
+            style="@style/MyButton"
+
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp" />
+        <com.ssdev.saeedsina.lostfound.MyViews.MyButton
+            android:id="@+id/btn_found_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            style="@style/MyButton"
+
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp" />
+        <com.ssdev.saeedsina.lostfound.MyViews.MyButton
+            android:id="@+id/btn_found_back2menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            style="@style/MyButton"
+
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp" />
+    </LinearLayout>
+</ScrollView>

@@ -4,28 +4,36 @@
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:name=".MyClasses.MyApplication_"
+        android:name=".MyClasses.MyApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MyActivities.MainActivity_" />
-        <activity android:name=".MyActivities.RegisterActivity_" />
-        <activity android:name=".MyActivities.MenuActivity_">
+        <activity android:name=".MyActivities.MainActivity">
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD3LN5ACLF3YlZkzQsb2JBWounncnCzV7E" />
+
+        <activity
+            android:name=".MyActivities.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MyActivities.SubmitLostActivity_" />
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAX94KmuhrWlrcVzYp15CfG9RLEcp-nLQo" />
     </application>
 
 </manifest>

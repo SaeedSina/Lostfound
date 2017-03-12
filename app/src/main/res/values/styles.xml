@@ -1,12 +1,35 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">#05A18C</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">#05A18C</item>
+        <!--   theme UI controls like checkboxes and text fields -->
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name = "MyNoActionBar" parent = "AppTheme">
+        <item name = "android:windowActionBar">false</item>
+        <item name = "android:windowNoTitle">false</item>
+    </style>
+    <style name="MyButton">
+        <item name="android:background">@drawable/button_selector</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="android:textColor">@color/black</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAllCaps">false</item>
+
+    </style>
+
+    <style name="MyTextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
 
     <style name="BacktoryCircularProgressBar">
         <item name="cpd_padding">0dp</item>
@@ -26,23 +49,16 @@
         <item name="cpd_outAnimDuration">@android:integer/config_mediumAnimTime</item>
     </style>
 
-    <style name="BacktoryLinearProgressBar">
-        <item name="lpd_maxLineWidth">70%</item>
-        <item name="lpd_minLineWidth">30%</item>
-        <item name="lpd_strokeSize">5dp</item>
-        <item name="lpd_strokeColor">@color/blue</item>
-        <item name="lpd_strokeSecondaryColor">@color/transparentWhite</item>
-        <item name="lpd_reverse">false</item>
-        <item name="lpd_travelDuration">1000</item>
-        <item name="lpd_transformDuration">600</item>
-        <item name="lpd_keepDuration">200</item>
-        <item name="lpd_transformInterpolator">@android:anim/decelerate_interpolator</item>
-        <item name="pv_progressMode">indeterminate</item>
-        <item name="lpd_inAnimDuration">@android:integer/config_mediumAnimTime</item>
-        <item name="lpd_outAnimDuration">@android:integer/config_mediumAnimTime</item>
-        <item name="lpd_verticalAlign">bottom</item>
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
     </style>
-    <style name="Theme.Default.Dialog" parent="@android:style/Theme.Dialog"></style>
 
+    <style name="FullscreenActionBarStyle" parent="android:Widget.Holo.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
 
 </resources>

@@ -16,7 +16,7 @@ public class MyTextView extends TextView {
     }
 
     private void setFont() {
-        Typeface normal = Typeface.createFromAsset(getContext().getAssets(),"fonts/iransans.ttf");
+        Typeface normal = Typeface.createFromAsset(getContext().getAssets(),"fonts/bree.otf");
         setTypeface( normal, Typeface.NORMAL );
     }
 

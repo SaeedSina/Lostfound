@@ -15,7 +15,11 @@ public class MyHelper {
 
     Context context;
 
-    public void toast(String toast) {
+    public MyHelper(Context context){
+        this.context=context;
+    }
+
+    public void Toast(String toast) {
         Toast.makeText(context, toast, Toast.LENGTH_LONG).show();
     }
 

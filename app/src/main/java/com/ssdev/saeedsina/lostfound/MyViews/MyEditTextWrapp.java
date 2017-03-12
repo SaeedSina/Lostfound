@@ -22,7 +22,7 @@ public class MyEditTextWrapp extends FloatLabeledEditText {
     private void setFont() {
         TextView tvHint = (TextView) getChildAt(0);
 
-        Typeface normal = Typeface.createFromAsset(getContext().getAssets(),"fonts/iransans.ttf");
+        Typeface normal = Typeface.createFromAsset(getContext().getAssets(),"fonts/bree.otf");
         tvHint.setTypeface( normal, Typeface.NORMAL );
 
         LayoutParams layoutParams = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);

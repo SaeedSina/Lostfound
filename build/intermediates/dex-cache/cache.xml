@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\Android\Projects\LostFound\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-10.0.1_3f9581313df9f28e2ec9daa1ce8033ad147eca89\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Projects\LostFound\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.1_6f0142673719cb96c3d2705d00b7f9e9c0dd53c2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Projects\LostFound\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9f719f2898f72a825aef86468cb0a1c86b42e01b">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_648b47c753f97e16a6f464dec4d2697599523483\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Projects\LostFound\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.1.1_b9d27448aa92c0c2d0f6f985e17f85b0ba45a897\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Projects\LostFound\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-10.0.1_c0768c685b0f9be03fb87bb84a7d11544c0ac4bd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Software\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0-beta4\constraint-layout-solver-1.0.0-beta4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0a9cb567dc008f570c28531720168f19148da965">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.0-beta4_a5d2b179cfefc5aff821cf22f9fc2d68edec54e4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Projects\LostFound\app\build\intermediates\exploded-aar\com.ogaclejapan.arclayout\library\1.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e73be64ef3e56ecc035bd298d274136e2ad66d20">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.ogaclejapan.arclayout-library-1.1.0_0bc7f59db4a7f6ad9265276a08d5e05790c429e2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Projects\LostFound\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a8ae156c2726ac9c56daaf4b49452ec2cdb7bba9">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-25.1.1_53b45a8de27cfdef219fd3d4e4b24b3b48b939f4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Projects\LostFound\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-10.0.1_f9735ddc962608980ffbca30e33f598a5aea2d97\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Projects\LostFound\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.1_e63b6f04fea11c5d414720713d3f4e2a76ada2f8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Projects\LostFound\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-10.0.1_6e102edc68d855c08ec0b10ef58de1293dbc1e9b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Projects\LostFound\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.1_a0a4fe0f643126da561905eb03f9a3c499e4d1b0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Projects\LostFound\app\build\intermediates\exploded-aar\com.wrapp.floatlabelededittext\library\0.0.6\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0db8e1dc3097c0db8425b339e5e720ef6e918400">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.wrapp.floatlabelededittext-library-0.0.6_0fd10406472607b7fc1a3eece73ef041803acff9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Saeedek\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_8b00058e1e5886f980dfd4a749de1df519905c0e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Projects\LostFound\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.1_2f2c309f3234406192ee26bc2be9c5ab7a8c7625\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Projects\LostFound\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.1_6480e820d27b3973ac86fd93a8b2945ca2aef0ec\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Projects\LostFound\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.1_79404f5c2553e600305e5fd2c786dc8497854fd2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Projects\LostFound\app\build\intermediates\exploded-aar\com.mohamadamin\persianmaterialdatetimepicker\1.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="40db7bc029c1344cfe2e16200a009043f6561d75">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.mohamadamin-persianmaterialdatetimepicker-1.2.1_ebc385ed92469c27092cac2f1919bf52b05bbad3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Projects\LostFound\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.1_cf6964f4e6fbfc44cf4aed1b7f41018c2c807385\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Software\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.1_f51786c820f77bdf219ff422f38cc89ec447145e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Saeedek\.gradle\caches\modules-2\files-2.1\com.backendless\backendless\3.0.24\56bf778669071651dcf5937927b0a1e9de69b7f3\backendless-3.0.24.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="56bf778669071651dcf5937927b0a1e9de69b7f3">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\backendless-3.0.24_27daceb7bc31317362a942129e7f4f496753e5a0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Projects\LostFound\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.1_48698632cdfd2e7becafc187c8f8afc912b29f12\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Projects\LostFound\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c0bfaf1cbb087dc4ed1e89cd271f4088dbcf4571">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_7b792787b959e0d92c25de8386f4647a268daffa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Saeedek\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.4\695b63d702f505b9b916e02272e3b6381bade7f\gson-2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.4_92788814ee44a27e485e0899990910c52de95c77\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Saeedek\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-2.4.0_9efe1b0b261279d8242ead58cba07064c50d4136\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Projects\LostFound\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="44a694d4095be84c2888764b1f7256b385c030ad">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-10.0.1_f935f70aedbb9b37d9c470e4bf337c445dfeaf9a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Projects\LostFound\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.1_77030997bc0a2d3cee92fd843638b9b9f9702f25\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Projects\LostFound\app\build\intermediates\exploded-aar\com.github.rey5137\material\1.2.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8419191d25f4105772fc16b55a005a270cb4d4c8">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.rey5137-material-1.2.4_e512eb457a83dff9e664b1aabbdb400fb81d7556\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Projects\LostFound\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-beta4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="662d7533b25a666c649c10a16b42edfb95f25a4f">
+        <dex dex="D:\Android\Projects\LostFound\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support.constraint-constraint-layout-1.0.0-beta4_ee6e0910f7d438e098a9d8354cff3275ca402af5\classes.dex" />
+    </item>
+
+</items>

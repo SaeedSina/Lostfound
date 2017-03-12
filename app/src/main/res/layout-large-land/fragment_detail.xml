@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.ssdev.saeedsina.lostfound.MyFragments.DetailFragment"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/common_google_signin_btn_icon_dark"
+            android:id="@+id/img_detail"
+            android:layout_height="200dp" />
+        <com.ssdev.saeedsina.lostfound.MyViews.MyTextView
+            style="@style/MyTextView"
+            android:id="@+id/txt_detail_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="awdawdawd" />
+        <com.ssdev.saeedsina.lostfound.MyViews.MyTextView
+            style="@style/MyTextView"
+
+            android:id="@+id/txt_detail_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="awdawd" />
+        <com.ssdev.saeedsina.lostfound.MyViews.MyTextView
+            style="@style/MyTextView"
+
+            android:id="@+id/txt_detail_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="awdawd" />
+
+        <com.ssdev.saeedsina.lostfound.MyViews.MyTextView
+            style="@style/MyTextView"
+
+            android:id="@+id/txt_detail_reward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="awdawd" />
+
+        <com.ssdev.saeedsina.lostfound.MyViews.MyTextView
+            style="@style/MyTextView"
+            android:id="@+id/txt_detail_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="awdawd" />
+    </LinearLayout>
+</ScrollView>

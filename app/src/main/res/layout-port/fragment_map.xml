@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ssdev.saeedsina.lostfound.MyFragments.MapFragment"
+    android:orientation="vertical"
+    >
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5" />
+    <com.ssdev.saeedsina.lostfound.MyViews.MyButton android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:text="@string/location"
+        style="@style/MyButton"
+        android:id="@+id/btn_select_location">
+
+    </com.ssdev.saeedsina.lostfound.MyViews.MyButton>
+</LinearLayout>

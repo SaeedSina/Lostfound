@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menuitems_array">
+        <item>Submit Lost</item>
+        <item>Submit Found</item>
+        <item>Ad List</item>
+        <item>About Us</item>
+        <item>Log Out</item>
+        <item>Exit</item>
+    </string-array>
+</resources>

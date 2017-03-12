@@ -16,7 +16,7 @@ public class LoadingDialog {
     Context context;
 
 
-    void afterInject() {
+    public  LoadingDialog(Context context) {
         dialog = new Dialog(context);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setCancelable(false);
